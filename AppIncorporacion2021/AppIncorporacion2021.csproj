@@ -75,6 +75,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\AppIncorporacion2021.Data.Incorporacion.datasource" />
+    <None Include="Properties\DataSources\AppIncorporacion2021.Modelo.ModeloIncorporacion.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

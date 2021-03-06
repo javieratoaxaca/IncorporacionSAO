@@ -7,16 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AppIncorporacion2021.Modelo;
+using AppIncorporacion2021.Data;
 
 namespace AppIncorporacion2021
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
+        Modelo.ModeloIncorporacion smIncorporacion;
         int m, mx, my; //Variables Globales para la manipulacion de las ventana
 
-        public Form1()
+        public Main()
         {
             InitializeComponent();
+            smIncorporacion = new Modelo.ModeloIncorporacion();
+            
+
         }
         #region Botones(Close,Max,Min)
        
@@ -43,13 +49,29 @@ namespace AppIncorporacion2021
             Application.Exit();
         }
 
-       
+        private void gdtgvDetalles_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            smIncorporacion.CargarGrid(gdtgvDetalles);
+            
+        }
+
         private void btnMax_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
                 WindowState = FormWindowState.Maximized;
             else if (WindowState == FormWindowState.Maximized)
                 WindowState = FormWindowState.Normal;
+        }
+
+        private void gbtnBuscar_Click(object sender, EventArgs e)
+        {
+            //string dato = gTxtBuscar.Text;
+            //smIncorporacion.CargarGrid(gdtgvDetalles, dato);
         }
 
         private void btnMin_Click(object sender, EventArgs e)
@@ -62,6 +84,12 @@ namespace AppIncorporacion2021
 
 
         #endregion
+
+        //private void CargarTabla(string dato)
+        //{
+        //    List<Incorporacion> lista = new List<Incorporacion>();
+        //    gdtgvDetalles.DataSource = smIncorporacion.consulta(dato);
+        //}
 
     }
 }
