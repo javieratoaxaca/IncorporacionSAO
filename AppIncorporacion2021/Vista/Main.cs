@@ -42,6 +42,8 @@ namespace AppIncorporacion2021
         {
             Application.Exit();
         }
+
+       
         private void btnMax_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)

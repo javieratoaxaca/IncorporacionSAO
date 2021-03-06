@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -36,7 +39,16 @@
             this.btnMin = new Guna.UI.WinForms.GunaButton();
             this.btnMax = new Guna.UI.WinForms.GunaButton();
             this.btnClose = new Guna.UI.WinForms.GunaButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.gTxtBuscar = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.gbtnBuscar = new Guna.UI.WinForms.GunaButton();
+            this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.gdtgvDetalles = new Guna.UI.WinForms.GunaDataGridView();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.gunaElipsePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gdtgvDetalles)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -157,12 +169,152 @@
             this.btnClose.TabIndex = 1;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel3.Controls.Add(this.gbtnBuscar);
+            this.panel3.Controls.Add(this.gunaLabel2);
+            this.panel3.Controls.Add(this.gTxtBuscar);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 39);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1003, 61);
+            this.panel3.TabIndex = 2;
+            // 
+            // gTxtBuscar
+            // 
+            this.gTxtBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.gTxtBuscar.BaseColor = System.Drawing.Color.White;
+            this.gTxtBuscar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
+            this.gTxtBuscar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gTxtBuscar.FocusedBaseColor = System.Drawing.Color.White;
+            this.gTxtBuscar.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.gTxtBuscar.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtBuscar.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.gTxtBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gTxtBuscar.Location = new System.Drawing.Point(168, 6);
+            this.gTxtBuscar.Name = "gTxtBuscar";
+            this.gTxtBuscar.PasswordChar = '\0';
+            this.gTxtBuscar.Radius = 15;
+            this.gTxtBuscar.SelectedText = "";
+            this.gTxtBuscar.Size = new System.Drawing.Size(573, 46);
+            this.gTxtBuscar.TabIndex = 0;
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Semi Rounded Sans Serif 7", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel2.Location = new System.Drawing.Point(64, 18);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(101, 23);
+            this.gunaLabel2.TabIndex = 5;
+            this.gunaLabel2.Text = "Buscar :";
+            // 
+            // gbtnBuscar
+            // 
+            this.gbtnBuscar.AnimationHoverSpeed = 0.07F;
+            this.gbtnBuscar.AnimationSpeed = 0.03F;
+            this.gbtnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnBuscar.BaseColor = System.Drawing.Color.White;
+            this.gbtnBuscar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
+            this.gbtnBuscar.BorderSize = 2;
+            this.gbtnBuscar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnBuscar.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnBuscar.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbtnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gbtnBuscar.Image = global::AppIncorporacion2021.Properties.Resources.icons8_google_web_search_60px;
+            this.gbtnBuscar.ImageSize = new System.Drawing.Size(40, 40);
+            this.gbtnBuscar.Location = new System.Drawing.Point(773, 6);
+            this.gbtnBuscar.Name = "gbtnBuscar";
+            this.gbtnBuscar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.gbtnBuscar.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gbtnBuscar.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnBuscar.OnHoverImage = null;
+            this.gbtnBuscar.OnPressedColor = System.Drawing.Color.Black;
+            this.gbtnBuscar.Radius = 10;
+            this.gbtnBuscar.Size = new System.Drawing.Size(159, 46);
+            this.gbtnBuscar.TabIndex = 6;
+            this.gbtnBuscar.Text = "Buscar";
+            // 
+            // gunaElipsePanel1
+            // 
+            this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaElipsePanel1.BaseColor = System.Drawing.Color.White;
+            this.gunaElipsePanel1.Controls.Add(this.gdtgvDetalles);
+            this.gunaElipsePanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaElipsePanel1.Location = new System.Drawing.Point(0, 100);
+            this.gunaElipsePanel1.Name = "gunaElipsePanel1";
+            this.gunaElipsePanel1.Size = new System.Drawing.Size(1003, 347);
+            this.gunaElipsePanel1.TabIndex = 3;
+            // 
+            // gdtgvDetalles
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gdtgvDetalles.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gdtgvDetalles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gdtgvDetalles.BackgroundColor = System.Drawing.Color.White;
+            this.gdtgvDetalles.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gdtgvDetalles.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gdtgvDetalles.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gdtgvDetalles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.gdtgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gdtgvDetalles.DefaultCellStyle = dataGridViewCellStyle3;
+            this.gdtgvDetalles.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gdtgvDetalles.EnableHeadersVisualStyles = false;
+            this.gdtgvDetalles.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gdtgvDetalles.Location = new System.Drawing.Point(0, 0);
+            this.gdtgvDetalles.Name = "gdtgvDetalles";
+            this.gdtgvDetalles.RowHeadersVisible = false;
+            this.gdtgvDetalles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gdtgvDetalles.Size = new System.Drawing.Size(1003, 347);
+            this.gdtgvDetalles.TabIndex = 0;
+            this.gdtgvDetalles.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.gdtgvDetalles.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.gdtgvDetalles.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.gdtgvDetalles.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.gdtgvDetalles.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.gdtgvDetalles.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.gdtgvDetalles.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.gdtgvDetalles.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gdtgvDetalles.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gdtgvDetalles.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gdtgvDetalles.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.gdtgvDetalles.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.gdtgvDetalles.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gdtgvDetalles.ThemeStyle.HeaderStyle.Height = 4;
+            this.gdtgvDetalles.ThemeStyle.ReadOnly = false;
+            this.gdtgvDetalles.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.gdtgvDetalles.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gdtgvDetalles.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.gdtgvDetalles.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gdtgvDetalles.ThemeStyle.RowsStyle.Height = 22;
+            this.gdtgvDetalles.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gdtgvDetalles.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1003, 607);
+            this.Controls.Add(this.gunaElipsePanel1);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -170,6 +322,10 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.gunaElipsePanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gdtgvDetalles)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -183,6 +339,12 @@
         private Guna.UI.WinForms.GunaButton btnMin;
         private Guna.UI.WinForms.GunaButton btnMax;
         private Guna.UI.WinForms.GunaButton btnClose;
+        private System.Windows.Forms.Panel panel3;
+        private Guna.UI.WinForms.GunaButton gbtnBuscar;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaTextBox gTxtBuscar;
+        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
+        private Guna.UI.WinForms.GunaDataGridView gdtgvDetalles;
     }
 }
 
