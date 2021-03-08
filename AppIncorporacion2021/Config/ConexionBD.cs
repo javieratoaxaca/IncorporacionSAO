@@ -13,7 +13,7 @@ namespace AppIncorporacion2021.Config
         public ConexionBD()
         {
             //Conexion de Casa
-            //cad_cnx = "Database=tiendita; Data Source=localhost;User id=root;password=Temporal2017;";
+            //cad_cnx = "Database=tiendita; Data Source=localhost;User id=root;password=oportunidades;";
             //Conexion de Trabajo
             cad_cnx = "Database=Incorporacion2021; Data Source=localhost;User id=root;password=oportunidades;";
         }

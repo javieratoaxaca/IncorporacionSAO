@@ -9,3 +9,12 @@ D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncor
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.pdb
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\bin\Debug\MySql.Data.dll
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.Main.resources
+C:\Users\Oscar Larios\Documents\Visual Studio 2015\Projects\IncorporacionSAO\AppIncorporacion2021\bin\Debug\AppIncorporacion2021.exe.config
+C:\Users\Oscar Larios\Documents\Visual Studio 2015\Projects\IncorporacionSAO\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.exe
+C:\Users\Oscar Larios\Documents\Visual Studio 2015\Projects\IncorporacionSAO\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.pdb
+C:\Users\Oscar Larios\Documents\Visual Studio 2015\Projects\IncorporacionSAO\AppIncorporacion2021\bin\Debug\AppIncorporacion2021.exe
+C:\Users\Oscar Larios\Documents\Visual Studio 2015\Projects\IncorporacionSAO\AppIncorporacion2021\bin\Debug\AppIncorporacion2021.pdb
+C:\Users\Oscar Larios\Documents\Visual Studio 2015\Projects\IncorporacionSAO\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.csprojResolveAssemblyReference.cache
+C:\Users\Oscar Larios\Documents\Visual Studio 2015\Projects\IncorporacionSAO\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.Main.resources
+C:\Users\Oscar Larios\Documents\Visual Studio 2015\Projects\IncorporacionSAO\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.Properties.Resources.resources
+C:\Users\Oscar Larios\Documents\Visual Studio 2015\Projects\IncorporacionSAO\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.csproj.GenerateResource.Cache
