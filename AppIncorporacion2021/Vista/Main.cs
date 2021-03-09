@@ -26,7 +26,6 @@ namespace AppIncorporacion2021
         }
         #region Botones(Close,Max,Min)
        
-
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             m = 1;
