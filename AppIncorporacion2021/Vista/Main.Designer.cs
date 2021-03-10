@@ -28,15 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gTxtBuscar = new Guna.UI.WinForms.GunaTextBox();
@@ -47,76 +41,17 @@
             this.gbtnBegin = new Guna.UI.WinForms.GunaButton();
             this.gBtnSkipBegin = new Guna.UI.WinForms.GunaButton();
             this.gbtnBuscar = new Guna.UI.WinForms.GunaButton();
-            this.btnMin = new Guna.UI.WinForms.GunaButton();
-            this.btnMax = new Guna.UI.WinForms.GunaButton();
-            this.btnClose = new Guna.UI.WinForms.GunaButton();
-            this.gLblRegistros = new Guna.UI.WinForms.GunaLabel();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.gBtnCloseForm = new Guna.UI.WinForms.GunaButton();
             this.panel3.SuspendLayout();
             this.gunaElipsePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdtgvDetalles)).BeginInit();
             this.SuspendLayout();
             // 
-            // gunaElipse1
-            // 
-            this.gunaElipse1.Radius = 25;
-            this.gunaElipse1.TargetControl = this;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
-            this.panel2.Controls.Add(this.gunaLabel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 577);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1003, 30);
-            this.panel2.TabIndex = 1;
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Semi Rounded Sans Serif 7", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel3.Location = new System.Drawing.Point(36, 8);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(272, 15);
-            this.gunaLabel3.TabIndex = 5;
-            this.gunaLabel3.Text = "Subdirección de Atención Operativa";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(89)))), ((int)(((byte)(70)))));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Controls.Add(this.gunaLabel1);
-            this.panel1.Controls.Add(this.btnMin);
-            this.panel1.Controls.Add(this.btnMax);
-            this.panel1.Controls.Add(this.btnClose);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1003, 39);
-            this.panel1.TabIndex = 0;
-            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
-            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
-            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Semi Rounded Sans Serif 7", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel1.Location = new System.Drawing.Point(35, 8);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(210, 23);
-            this.gunaLabel1.TabIndex = 4;
-            this.gunaLabel1.Text = "Incorporacion 2021";
-            // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel3.Controls.Add(this.gLblRegistros);
+            this.panel3.Controls.Add(this.gBtnCloseForm);
             this.panel3.Controls.Add(this.gBtnEnd);
             this.panel3.Controls.Add(this.gBtnSkipNext);
             this.panel3.Controls.Add(this.gbtnBegin);
@@ -125,17 +60,17 @@
             this.panel3.Controls.Add(this.gunaLabel2);
             this.panel3.Controls.Add(this.gTxtBuscar);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 39);
+            this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1003, 123);
+            this.panel3.Size = new System.Drawing.Size(1003, 130);
             this.panel3.TabIndex = 2;
             // 
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Semi Rounded Sans Serif 7", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel2.Location = new System.Drawing.Point(64, 18);
+            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
+            this.gunaLabel2.Location = new System.Drawing.Point(118, 33);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(101, 23);
             this.gunaLabel2.TabIndex = 5;
@@ -152,7 +87,7 @@
             this.gTxtBuscar.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
             this.gTxtBuscar.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.gTxtBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gTxtBuscar.Location = new System.Drawing.Point(183, 6);
+            this.gTxtBuscar.Location = new System.Drawing.Point(237, 21);
             this.gTxtBuscar.Name = "gTxtBuscar";
             this.gTxtBuscar.PasswordChar = '\0';
             this.gTxtBuscar.Radius = 15;
@@ -166,9 +101,9 @@
             this.gunaElipsePanel1.BaseColor = System.Drawing.Color.White;
             this.gunaElipsePanel1.Controls.Add(this.gdtgvDetalles);
             this.gunaElipsePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(0, 162);
+            this.gunaElipsePanel1.Location = new System.Drawing.Point(0, 130);
             this.gunaElipsePanel1.Name = "gunaElipsePanel1";
-            this.gunaElipsePanel1.Size = new System.Drawing.Size(1003, 415);
+            this.gunaElipsePanel1.Size = new System.Drawing.Size(1003, 477);
             this.gunaElipsePanel1.TabIndex = 3;
             // 
             // gdtgvDetalles
@@ -208,7 +143,7 @@
             this.gdtgvDetalles.ReadOnly = true;
             this.gdtgvDetalles.RowHeadersVisible = false;
             this.gdtgvDetalles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gdtgvDetalles.Size = new System.Drawing.Size(1003, 415);
+            this.gdtgvDetalles.Size = new System.Drawing.Size(1003, 477);
             this.gdtgvDetalles.TabIndex = 0;
             this.gdtgvDetalles.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gdtgvDetalles.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -249,7 +184,7 @@
             this.gBtnEnd.Image = global::AppIncorporacion2021.Properties.Resources.icons8_sort_left_48px___copia;
             this.gBtnEnd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gBtnEnd.ImageSize = new System.Drawing.Size(50, 50);
-            this.gBtnEnd.Location = new System.Drawing.Point(592, 62);
+            this.gBtnEnd.Location = new System.Drawing.Point(646, 77);
             this.gBtnEnd.Name = "gBtnEnd";
             this.gBtnEnd.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.gBtnEnd.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
@@ -275,7 +210,7 @@
             this.gBtnSkipNext.Image = global::AppIncorporacion2021.Properties.Resources.icons8_skip_to_start_48px___copia;
             this.gBtnSkipNext.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gBtnSkipNext.ImageSize = new System.Drawing.Size(50, 50);
-            this.gBtnSkipNext.Location = new System.Drawing.Point(479, 62);
+            this.gBtnSkipNext.Location = new System.Drawing.Point(533, 77);
             this.gBtnSkipNext.Name = "gBtnSkipNext";
             this.gBtnSkipNext.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.gBtnSkipNext.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
@@ -301,7 +236,7 @@
             this.gbtnBegin.Image = global::AppIncorporacion2021.Properties.Resources.icons8_sort_left_48px;
             this.gbtnBegin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gbtnBegin.ImageSize = new System.Drawing.Size(50, 50);
-            this.gbtnBegin.Location = new System.Drawing.Point(251, 62);
+            this.gbtnBegin.Location = new System.Drawing.Point(305, 77);
             this.gbtnBegin.Name = "gbtnBegin";
             this.gbtnBegin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.gbtnBegin.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
@@ -327,7 +262,7 @@
             this.gBtnSkipBegin.Image = global::AppIncorporacion2021.Properties.Resources.icons8_skip_to_start_48px;
             this.gBtnSkipBegin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gBtnSkipBegin.ImageSize = new System.Drawing.Size(50, 50);
-            this.gBtnSkipBegin.Location = new System.Drawing.Point(368, 62);
+            this.gBtnSkipBegin.Location = new System.Drawing.Point(422, 77);
             this.gBtnSkipBegin.Name = "gBtnSkipBegin";
             this.gBtnSkipBegin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.gBtnSkipBegin.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
@@ -352,7 +287,7 @@
             this.gbtnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
             this.gbtnBuscar.Image = global::AppIncorporacion2021.Properties.Resources.icons8_google_web_search_60px;
             this.gbtnBuscar.ImageSize = new System.Drawing.Size(40, 40);
-            this.gbtnBuscar.Location = new System.Drawing.Point(773, 6);
+            this.gbtnBuscar.Location = new System.Drawing.Point(827, 21);
             this.gbtnBuscar.Name = "gbtnBuscar";
             this.gbtnBuscar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.gbtnBuscar.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
@@ -365,92 +300,31 @@
             this.gbtnBuscar.Text = "Buscar";
             this.gbtnBuscar.Click += new System.EventHandler(this.gbtnBuscar_Click);
             // 
-            // btnMin
+            // gBtnCloseForm
             // 
-            this.btnMin.AnimationHoverSpeed = 0.07F;
-            this.btnMin.AnimationSpeed = 0.03F;
-            this.btnMin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
-            this.btnMin.BorderColor = System.Drawing.Color.Black;
-            this.btnMin.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnMin.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnMin.FocusedColor = System.Drawing.Color.Empty;
-            this.btnMin.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnMin.ForeColor = System.Drawing.Color.White;
-            this.btnMin.Image = global::AppIncorporacion2021.Properties.Resources.min_64px;
-            this.btnMin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnMin.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnMin.Location = new System.Drawing.Point(853, 0);
-            this.btnMin.Name = "btnMin";
-            this.btnMin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnMin.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnMin.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnMin.OnHoverImage = null;
-            this.btnMin.OnPressedColor = System.Drawing.Color.Black;
-            this.btnMin.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.btnMin.Size = new System.Drawing.Size(50, 39);
-            this.btnMin.TabIndex = 2;
-            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
-            // 
-            // btnMax
-            // 
-            this.btnMax.AnimationHoverSpeed = 0.07F;
-            this.btnMax.AnimationSpeed = 0.03F;
-            this.btnMax.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(188)))), ((int)(((byte)(154)))));
-            this.btnMax.BorderColor = System.Drawing.Color.Black;
-            this.btnMax.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnMax.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnMax.FocusedColor = System.Drawing.Color.Empty;
-            this.btnMax.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnMax.ForeColor = System.Drawing.Color.White;
-            this.btnMax.Image = global::AppIncorporacion2021.Properties.Resources.max_64px;
-            this.btnMax.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnMax.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnMax.Location = new System.Drawing.Point(903, 0);
-            this.btnMax.Name = "btnMax";
-            this.btnMax.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnMax.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnMax.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnMax.OnHoverImage = null;
-            this.btnMax.OnPressedColor = System.Drawing.Color.Black;
-            this.btnMax.Size = new System.Drawing.Size(50, 39);
-            this.btnMax.TabIndex = 3;
-            this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.AnimationHoverSpeed = 0.07F;
-            this.btnClose.AnimationSpeed = 0.03F;
-            this.btnClose.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
-            this.btnClose.BorderColor = System.Drawing.Color.Black;
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnClose.FocusedColor = System.Drawing.Color.Empty;
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Image = global::AppIncorporacion2021.Properties.Resources.icons8_cancel_64px;
-            this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnClose.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnClose.Location = new System.Drawing.Point(953, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnClose.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnClose.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnClose.OnHoverImage = null;
-            this.btnClose.OnPressedColor = System.Drawing.Color.Black;
-            this.btnClose.Size = new System.Drawing.Size(50, 39);
-            this.btnClose.TabIndex = 1;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // gLblRegistros
-            // 
-            this.gLblRegistros.AutoSize = true;
-            this.gLblRegistros.Font = new System.Drawing.Font("Semi Rounded Sans Serif 7", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gLblRegistros.ForeColor = System.Drawing.Color.White;
-            this.gLblRegistros.Location = new System.Drawing.Point(770, 62);
-            this.gLblRegistros.Name = "gLblRegistros";
-            this.gLblRegistros.Size = new System.Drawing.Size(148, 15);
-            this.gLblRegistros.TabIndex = 11;
-            this.gLblRegistros.Text = "Incorporaciones : ";
+            this.gBtnCloseForm.AnimationHoverSpeed = 0.07F;
+            this.gBtnCloseForm.AnimationSpeed = 0.03F;
+            this.gBtnCloseForm.BackColor = System.Drawing.Color.Transparent;
+            this.gBtnCloseForm.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
+            this.gBtnCloseForm.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
+            this.gBtnCloseForm.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gBtnCloseForm.FocusedColor = System.Drawing.Color.Empty;
+            this.gBtnCloseForm.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gBtnCloseForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gBtnCloseForm.Image = global::AppIncorporacion2021.Properties.Resources.icons8_cancel_64px;
+            this.gBtnCloseForm.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gBtnCloseForm.ImageSize = new System.Drawing.Size(30, 30);
+            this.gBtnCloseForm.Location = new System.Drawing.Point(1, 3);
+            this.gBtnCloseForm.Name = "gBtnCloseForm";
+            this.gBtnCloseForm.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.gBtnCloseForm.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gBtnCloseForm.OnHoverForeColor = System.Drawing.Color.White;
+            this.gBtnCloseForm.OnHoverImage = null;
+            this.gBtnCloseForm.OnPressedColor = System.Drawing.Color.Black;
+            this.gBtnCloseForm.Radius = 20;
+            this.gBtnCloseForm.Size = new System.Drawing.Size(37, 32);
+            this.gBtnCloseForm.TabIndex = 11;
+            this.gBtnCloseForm.Click += new System.EventHandler(this.gBtnCloseForm_Click);
             // 
             // Main
             // 
@@ -460,16 +334,10 @@
             this.ClientSize = new System.Drawing.Size(1003, 607);
             this.Controls.Add(this.gunaElipsePanel1);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Main_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.gunaElipsePanel1.ResumeLayout(false);
@@ -479,26 +347,17 @@
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaElipse gunaElipse1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaButton btnMin;
-        private Guna.UI.WinForms.GunaButton btnMax;
-        private Guna.UI.WinForms.GunaButton btnClose;
         private System.Windows.Forms.Panel panel3;
         private Guna.UI.WinForms.GunaButton gbtnBuscar;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaTextBox gTxtBuscar;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
         private Guna.UI.WinForms.GunaDataGridView gdtgvDetalles;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaButton gBtnEnd;
         private Guna.UI.WinForms.GunaButton gBtnSkipNext;
         private Guna.UI.WinForms.GunaButton gbtnBegin;
         private Guna.UI.WinForms.GunaButton gBtnSkipBegin;
-        private Guna.UI.WinForms.GunaLabel gLblRegistros;
+        private Guna.UI.WinForms.GunaButton gBtnCloseForm;
     }
 }
 

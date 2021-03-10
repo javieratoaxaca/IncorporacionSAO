@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AppIncorporacion2021.Vista;
+//using AppIncorporacion2021.Vista;
 
 namespace AppIncorporacion2021
 {
@@ -17,7 +17,8 @@ namespace AppIncorporacion2021
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Dashboard());
+            Application.Run(new Vista.Dashboard());
+            //Application.Run(new Main());
         }
     }
 }

@@ -67,6 +67,11 @@ namespace AppIncorporacion2021
                 WindowState = FormWindowState.Normal;
         }
 
+        private void gBtnCloseForm_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void gbtnBuscar_Click(object sender, EventArgs e)
         {
             //string dato = gTxtBuscar.Text;
