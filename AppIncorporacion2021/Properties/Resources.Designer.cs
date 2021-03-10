@@ -163,6 +163,16 @@ namespace AppIncorporacion2021.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_brick_60px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_brick_60px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_camera_100px {
             get {
                 object obj = ResourceManager.GetObject("icons8_camera_100px", resourceCulture);
@@ -196,6 +206,16 @@ namespace AppIncorporacion2021.Properties {
         internal static System.Drawing.Bitmap icons8_cancel_subscription_48px_1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_cancel_subscription_48px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_classroom_52px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_classroom_52px_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -466,6 +486,16 @@ namespace AppIncorporacion2021.Properties {
         internal static System.Drawing.Bitmap icons8_sort_left_52px {
             get {
                 object obj = ResourceManager.GetObject("icons8_sort_left_52px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_university_100px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_university_100px_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

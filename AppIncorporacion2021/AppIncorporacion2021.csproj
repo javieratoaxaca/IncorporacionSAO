@@ -54,6 +54,12 @@
     <Compile Include="Config\ConexionBD.cs" />
     <Compile Include="Data\Incorporacion.cs" />
     <Compile Include="Modelo\ModeloIncorporacion.cs" />
+    <Compile Include="Vista\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Vista\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +201,21 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="BD\Bd_Incorporacion20210305.sql" />
+    <None Include="Resources\icons8_brick_60px_1.png" />
+    <None Include="Resources\icons8_classroom_52px_1.png" />
+    <None Include="Resources\icons8_university_100px_1.png" />
+    <None Include="Resources\icons8_sort_left_48px - copia.png" />
+    <None Include="Resources\icons8_skip_to_start_48px - copia1.png" />
+    <None Include="Resources\icons8_skip_to_start_48px - copia.png" />
+    <None Include="Resources\icons8_end_48px.png" />
+    <None Include="Resources\icons8_end_48px_1.png" />
+    <None Include="Resources\icons8_next_52px.png" />
+    <None Include="Resources\icons8_previous_52px.png" />
+    <None Include="Resources\icons8_previous_100px.png" />
+    <None Include="Resources\icons8_previous_100px_1.png" />
+    <None Include="Resources\icons8_skip_to_start_48px.png" />
+    <None Include="Resources\icons8_sort_left_48px.png" />
+    <None Include="Resources\icons8_sort_left_52px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
