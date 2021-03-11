@@ -19,3 +19,5 @@ D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncor
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.pdb
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.Vista.Dashboard.resources
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.csprojResolveAssemblyReference.cache
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\bin\Debug\System.Data.SQLite.dll
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.CargarDB.resources

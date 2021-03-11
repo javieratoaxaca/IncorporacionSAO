@@ -40,6 +40,10 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SIDM_V8_Agosto_2014\bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,6 +64,12 @@
     <Compile Include="Vista\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\CargarBD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\CargarBD.Designer.cs">
+      <DependentUpon>CargarBD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Vista\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\CargarBD.resx">
+      <DependentUpon>CargarBD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
