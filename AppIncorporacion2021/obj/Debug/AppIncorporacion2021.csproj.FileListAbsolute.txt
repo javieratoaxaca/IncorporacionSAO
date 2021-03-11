@@ -21,3 +21,9 @@ D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncor
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.csprojResolveAssemblyReference.cache
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\bin\Debug\System.Data.SQLite.dll
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.CargarDB.resources
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\bin\Debug\x86\sqlite3.dll
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\bin\Debug\x64\sqlite3.dll
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\bin\Debug\EntityFramework.dll
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\bin\Debug\EntityFramework.SqlServer.dll
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\bin\Debug\EntityFramework.xml
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\bin\Debug\EntityFramework.SqlServer.xml

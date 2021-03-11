@@ -107,6 +107,7 @@ namespace AppIncorporacion2021.Vista
 
         private void gbtnSubMenuMetaEms_Click(object sender, EventArgs e)
         {
+            abrirFormularioHijo(new CargarDB()); 
             /*
                    Aqui va el codigo para las demas operaciones
                    */

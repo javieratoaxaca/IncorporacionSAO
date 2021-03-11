@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 using System.Data;
-using AppIncorporacion2021.Data;
+
 
 namespace AppIncorporacion2021.Modelo
 {

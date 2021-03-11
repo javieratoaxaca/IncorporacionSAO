@@ -179,7 +179,7 @@
             // 
             this.pnlPiePagina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
             this.pnlPiePagina.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlPiePagina.Location = new System.Drawing.Point(0, 667);
+            this.pnlPiePagina.Location = new System.Drawing.Point(0, 711);
             this.pnlPiePagina.Name = "pnlPiePagina";
             this.pnlPiePagina.Size = new System.Drawing.Size(1033, 31);
             this.pnlPiePagina.TabIndex = 1;
@@ -191,7 +191,7 @@
             this.pnlCentral.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlCentral.Location = new System.Drawing.Point(0, 42);
             this.pnlCentral.Name = "pnlCentral";
-            this.pnlCentral.Size = new System.Drawing.Size(1033, 625);
+            this.pnlCentral.Size = new System.Drawing.Size(1033, 669);
             this.pnlCentral.TabIndex = 2;
             // 
             // pnlMenu
@@ -200,7 +200,7 @@
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMenu.Location = new System.Drawing.Point(240, 0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(793, 625);
+            this.pnlMenu.Size = new System.Drawing.Size(793, 669);
             this.pnlMenu.TabIndex = 1;
             // 
             // pnlMenuLateral
@@ -217,7 +217,7 @@
             this.pnlMenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenuLateral.Location = new System.Drawing.Point(0, 0);
             this.pnlMenuLateral.Name = "pnlMenuLateral";
-            this.pnlMenuLateral.Size = new System.Drawing.Size(240, 625);
+            this.pnlMenuLateral.Size = new System.Drawing.Size(240, 669);
             this.pnlMenuLateral.TabIndex = 0;
             // 
             // pnlSubMenuAdmin
@@ -601,7 +601,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1033, 698);
+            this.ClientSize = new System.Drawing.Size(1033, 742);
             this.Controls.Add(this.pnlCentral);
             this.Controls.Add(this.pnlPiePagina);
             this.Controls.Add(this.pnlEncabezado);
