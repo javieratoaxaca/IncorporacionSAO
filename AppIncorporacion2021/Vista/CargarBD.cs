@@ -41,9 +41,7 @@ namespace AppIncorporacion2021
             {
                 MessageBox.Show(ex.Message);
             }
-            
-
-            //MessageBox.Show("" + cnx.GetConnection(gTxtDitectorio.Text));
+           
         }
 
         private void gBtnBuscarDB_Click(object sender, EventArgs e)
