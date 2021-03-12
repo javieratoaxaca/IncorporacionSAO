@@ -9,7 +9,7 @@ namespace AppIncorporacion2021
     {
 
         //Modelo.ModeloBecarios smBecarios;
-        ConexionSQLite cnx;
+        ConexionSQLite cnx=null;
 
         public CargarDB()
         {
@@ -24,8 +24,26 @@ namespace AppIncorporacion2021
         //Sirvara para obtener el tipo de base de datos a cargar
         private void gBtnExaminar_Click(object sender, EventArgs e)
         {
-            cargarDB();
-            cnx.GetConnection(gTxtDitectorio.Text);
+            //gTxtFiltro.Text = "*.S3DB";
+            OpenFileDialog fBrowDialog = new OpenFileDialog();
+
+            string path = fBrowDialog.ShowDialog() == DialogResult.OK ? fBrowDialog.FileName : "";
+            gTxtDitectorio.Text = path;
+            cnx = new ConexionSQLite();
+            try
+            {
+                cnx.GetConnection(path);
+                string sql = "select * from becarios";
+                var data=cnx.GetData(sql);
+                gdtgvDetallesS3db.DataSource = data;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+
+            //MessageBox.Show("" + cnx.GetConnection(gTxtDitectorio.Text));
         }
 
         private void gBtnBuscarDB_Click(object sender, EventArgs e)
@@ -34,13 +52,8 @@ namespace AppIncorporacion2021
         }
         private void cargarDB()
         {
-            gTxtFiltro.Text = "*.S3DB";
-            OpenFileDialog fBrowDialog = new OpenFileDialog();
+            
 
-            if (fBrowDialog.ShowDialog() == DialogResult.OK)
-                this.gTxtDitectorio.Text = fBrowDialog.FileName;
-            else
-                gTxtDitectorio.Text = "";
 
             //if (this.gTxtDitectorio.Text != "")
             //{
