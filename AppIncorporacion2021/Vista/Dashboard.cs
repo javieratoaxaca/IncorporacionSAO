@@ -18,6 +18,7 @@ namespace AppIncorporacion2021.Vista
         {
             InitializeComponent();
             diseñoPersonalizado();
+            abrirFormularioHijo(new Metas());
         }
 
         #region PersonalizarMenu

@@ -11,11 +11,7 @@ namespace AppIncorporacion2021
 {
     public partial class CargarDB : Form
     {
-
-        ModeloBecarios smBecarios;
-        Becarios dtBecarios;
         ConexionSQLite cnx=null;
-        ConexionBD cnxmysql = null;
 
         public CargarDB()
         {
@@ -58,7 +54,7 @@ namespace AppIncorporacion2021
             ModeloBecarios smBecarios = new ModeloBecarios();
             try
             {
-                cnxmysql = new ConexionBD();
+                //cnxmysql = new ConexionBD();
 
                 for(int i= 0; i < gdtgvDetallesS3db.RowCount; i++)
                 {
@@ -83,22 +79,25 @@ namespace AppIncorporacion2021
                     dtBecarios.Remesa = gdtgvDetallesS3db.Rows[i].Cells[18].Value.ToString();
                     dtBecarios.Anio = gdtgvDetallesS3db.Rows[i].Cells[19].Value.ToString();
 
-                    if (!smBecarios.ExisteBecario(dtBecarios.Id_programa))
-                    {
-                        if (smBecarios.SetBecarios(dtBecarios))
-                        {
-                           // MessageBox.Show("Se Guardo Exitosamente");
-                        }
-                    }
+                    smBecarios.SetBecarios(dtBecarios);
+                    //if (!smBecarios.ExisteBecario(dtBecarios.Id_programa))
+                    //{
+                    //    if (smBecarios.SetBecarios(dtBecarios))
+                    //    {
+                    //       // MessageBox.Show("Se Guardo Exitosamente");
+                    //    }
+                    //}
                     
                 }
                 
             }
+            
             catch (Exception ex)
             {
 
                 MessageBox.Show(ex.Message);
             }
+            
         }
 
         //Metodo para insertar los Datos del DatagridView a la Base de Datos

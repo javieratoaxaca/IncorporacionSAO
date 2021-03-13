@@ -57,13 +57,15 @@ namespace AppIncorporacion2021.Modelo
                 int result = ExecuteQuery(Query);
 
                 if (result > 0)
-                    MessageBox.Show("Se Guardo Exitosamente");
+                    
                 return true;
             }
+            
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
+            
 
             return false;
         }

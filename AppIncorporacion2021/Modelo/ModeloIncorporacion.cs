@@ -113,5 +113,26 @@ namespace AppIncorporacion2021.Modelo
         //    return lista;
         //}
         #endregion
+
+        //Metodo para saber el total de CRIS
+        private void tutorasBecas()
+        {
+
+            try
+            {
+
+                string query = string.Format("SELECT COUNT(FAMILIA_ID) FROM NOMINAINCO WHERE CR_CRIS='SE APLICO LA ENCUESTA'");
+                //creamos el cmd para que se lleve el query y cargue la conexion con la DB
+                MySqlCommand cmd = new MySqlCommand(query, GetConnection());
+                cmd.ExecuteNonQuery();
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }
