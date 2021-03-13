@@ -8,18 +8,16 @@ namespace AppIncorporacion2021.Data
 {
     class Becarios
     {
+        int id_becario;
         int id_programa;
         string nombre;
         string primer_apellido;
         string segundo_apellido;
         string curp;
-        string sexo;
-        string fecha_nacimiento;
         string telefono;
         string email;
         int grado_escolar;
-        int origen;
-        int region_id;
+        string region_id;
         string sede;
         string cve_cct;
         string nombre_cct;
@@ -27,12 +25,24 @@ namespace AppIncorporacion2021.Data
         int municipio_id;
         int cve_localidad;
         int localidad_id;
-        double folio_formato;
+        string folio_formato;
         int bimestre;
         string remesa;
-        int anio;
-        int estado_id;
+        string anio;
+ 
 
+        public int Id_becario
+        {
+            get
+            {
+                return id_becario;
+            }
+
+            set
+            {
+                id_becario = value;
+            }
+        }
         public int Id_programa
         {
             get
@@ -98,32 +108,9 @@ namespace AppIncorporacion2021.Data
             }
         }
 
-        public string Sexo
-        {
-            get
-            {
-                return sexo;
-            }
+       
 
-            set
-            {
-                sexo = value;
-            }
-        }
-
-        public string Fecha_nacimiento
-        {
-            get
-            {
-                return fecha_nacimiento;
-            }
-
-            set
-            {
-                fecha_nacimiento = value;
-            }
-        }
-
+        
         public string Telefono
         {
             get
@@ -163,20 +150,9 @@ namespace AppIncorporacion2021.Data
             }
         }
 
-        public int Origen
-        {
-            get
-            {
-                return origen;
-            }
+        
 
-            set
-            {
-                origen = value;
-            }
-        }
-
-        public int Region_id
+        public string Region_id
         {
             get
             {
@@ -280,7 +256,7 @@ namespace AppIncorporacion2021.Data
             }
         }
 
-        public double Folio_formato
+        public string Folio_formato
         {
             get
             {
@@ -319,7 +295,7 @@ namespace AppIncorporacion2021.Data
             }
         }
 
-        public int Anio
+        public string Anio
         {
             get
             {
@@ -332,17 +308,8 @@ namespace AppIncorporacion2021.Data
             }
         }
 
-        public int Estado_id
-        {
-            get
-            {
-                return estado_id;
-            }
+       
 
-            set
-            {
-                estado_id = value;
-            }
-        }
+       
     }
 }
