@@ -40,6 +40,7 @@ namespace AppIncorporacion2021.Config
             int result = 0;
             try
             {
+               
                 MySqlCommand MySqlCommand = new MySqlCommand(SQL, GetConnection());
                 result = MySqlCommand.ExecuteNonQuery();
             }
