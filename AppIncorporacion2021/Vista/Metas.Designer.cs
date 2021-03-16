@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gBtnCloseFormMeta = new Guna.UI.WinForms.GunaButton();
             this.glblMetas = new Guna.UI.WinForms.GunaLabel();
@@ -44,6 +47,7 @@
             this.glblEscuelas = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel12 = new Guna.UI.WinForms.GunaLabel();
             this.gGpoIncorporacion = new Guna.UI.WinForms.GunaGroupBox();
+            this.gBtnDetallesRegion = new Guna.UI.WinForms.GunaButton();
             this.glblAvisosCobro = new Guna.UI.WinForms.GunaLabel();
             this.glblIncorporacion = new Guna.UI.WinForms.GunaLabel();
             this.glblEncuestas = new Guna.UI.WinForms.GunaLabel();
@@ -56,6 +60,8 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlDetallesDashboard = new System.Windows.Forms.Panel();
+            this.gDtgvDetallesRegion = new Guna.UI.WinForms.GunaDataGridView();
             this.panel1.SuspendLayout();
             this.gGpoSuperior.SuspendLayout();
             this.gGpoEms.SuspendLayout();
@@ -64,6 +70,8 @@
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.pnlDetallesDashboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gDtgvDetallesRegion)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -261,6 +269,7 @@
             this.gGpoIncorporacion.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
             this.gGpoIncorporacion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
             this.gGpoIncorporacion.BorderSize = 2;
+            this.gGpoIncorporacion.Controls.Add(this.gBtnDetallesRegion);
             this.gGpoIncorporacion.Controls.Add(this.glblAvisosCobro);
             this.gGpoIncorporacion.Controls.Add(this.glblIncorporacion);
             this.gGpoIncorporacion.Controls.Add(this.glblEncuestas);
@@ -283,6 +292,34 @@
             this.gGpoIncorporacion.Text = "Incorporacion Básica 2021";
             this.gGpoIncorporacion.TextLocation = new System.Drawing.Point(10, 8);
             this.gGpoIncorporacion.Click += new System.EventHandler(this.gGpoIncorporacion_Click);
+            // 
+            // gBtnDetallesRegion
+            // 
+            this.gBtnDetallesRegion.AnimationHoverSpeed = 0.07F;
+            this.gBtnDetallesRegion.AnimationSpeed = 0.03F;
+            this.gBtnDetallesRegion.BackColor = System.Drawing.Color.Transparent;
+            this.gBtnDetallesRegion.BaseColor = System.Drawing.Color.White;
+            this.gBtnDetallesRegion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
+            this.gBtnDetallesRegion.BorderSize = 2;
+            this.gBtnDetallesRegion.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gBtnDetallesRegion.FocusedColor = System.Drawing.Color.Empty;
+            this.gBtnDetallesRegion.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gBtnDetallesRegion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gBtnDetallesRegion.Image = global::AppIncorporacion2021.Properties.Resources.icons8_google_web_search_60px;
+            this.gBtnDetallesRegion.ImageSize = new System.Drawing.Size(40, 40);
+            this.gBtnDetallesRegion.Location = new System.Drawing.Point(89, 248);
+            this.gBtnDetallesRegion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gBtnDetallesRegion.Name = "gBtnDetallesRegion";
+            this.gBtnDetallesRegion.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.gBtnDetallesRegion.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gBtnDetallesRegion.OnHoverForeColor = System.Drawing.Color.White;
+            this.gBtnDetallesRegion.OnHoverImage = null;
+            this.gBtnDetallesRegion.OnPressedColor = System.Drawing.Color.Black;
+            this.gBtnDetallesRegion.Radius = 10;
+            this.gBtnDetallesRegion.Size = new System.Drawing.Size(287, 71);
+            this.gBtnDetallesRegion.TabIndex = 21;
+            this.gBtnDetallesRegion.Text = "Mostrar Detalles";
+            this.gBtnDetallesRegion.Click += new System.EventHandler(this.gBtnDetallesRegion_Click);
             // 
             // glblAvisosCobro
             // 
@@ -415,11 +452,84 @@
             this.panel3.Size = new System.Drawing.Size(521, 351);
             this.panel3.TabIndex = 0;
             // 
+            // pnlDetallesDashboard
+            // 
+            this.pnlDetallesDashboard.Controls.Add(this.gDtgvDetallesRegion);
+            this.pnlDetallesDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlDetallesDashboard.Location = new System.Drawing.Point(0, 390);
+            this.pnlDetallesDashboard.Name = "pnlDetallesDashboard";
+            this.pnlDetallesDashboard.Size = new System.Drawing.Size(1533, 472);
+            this.pnlDetallesDashboard.TabIndex = 19;
+            // 
+            // gDtgvDetallesRegion
+            // 
+            this.gDtgvDetallesRegion.AllowUserToAddRows = false;
+            this.gDtgvDetallesRegion.AllowUserToDeleteRows = false;
+            this.gDtgvDetallesRegion.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gDtgvDetallesRegion.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gDtgvDetallesRegion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gDtgvDetallesRegion.BackgroundColor = System.Drawing.Color.Silver;
+            this.gDtgvDetallesRegion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gDtgvDetallesRegion.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
+            this.gDtgvDetallesRegion.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gDtgvDetallesRegion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.gDtgvDetallesRegion.ColumnHeadersHeight = 45;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gDtgvDetallesRegion.DefaultCellStyle = dataGridViewCellStyle3;
+            this.gDtgvDetallesRegion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gDtgvDetallesRegion.EnableHeadersVisualStyles = false;
+            this.gDtgvDetallesRegion.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gDtgvDetallesRegion.Location = new System.Drawing.Point(0, 0);
+            this.gDtgvDetallesRegion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gDtgvDetallesRegion.Name = "gDtgvDetallesRegion";
+            this.gDtgvDetallesRegion.ReadOnly = true;
+            this.gDtgvDetallesRegion.RowHeadersVisible = false;
+            this.gDtgvDetallesRegion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gDtgvDetallesRegion.Size = new System.Drawing.Size(1533, 472);
+            this.gDtgvDetallesRegion.TabIndex = 1;
+            this.gDtgvDetallesRegion.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.gDtgvDetallesRegion.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.gDtgvDetallesRegion.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.gDtgvDetallesRegion.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.gDtgvDetallesRegion.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.gDtgvDetallesRegion.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.gDtgvDetallesRegion.ThemeStyle.BackColor = System.Drawing.Color.Silver;
+            this.gDtgvDetallesRegion.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gDtgvDetallesRegion.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
+            this.gDtgvDetallesRegion.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            this.gDtgvDetallesRegion.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gDtgvDetallesRegion.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gDtgvDetallesRegion.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.gDtgvDetallesRegion.ThemeStyle.HeaderStyle.Height = 45;
+            this.gDtgvDetallesRegion.ThemeStyle.ReadOnly = true;
+            this.gDtgvDetallesRegion.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
+            this.gDtgvDetallesRegion.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
+            this.gDtgvDetallesRegion.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gDtgvDetallesRegion.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
+            this.gDtgvDetallesRegion.ThemeStyle.RowsStyle.Height = 22;
+            this.gDtgvDetallesRegion.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
+            this.gDtgvDetallesRegion.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
+            // 
             // Metas
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(1533, 894);
+            this.Controls.Add(this.pnlDetallesDashboard);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -438,6 +548,8 @@
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.pnlDetallesDashboard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gDtgvDetallesRegion)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -471,5 +583,8 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
+        private Guna.UI.WinForms.GunaButton gBtnDetallesRegion;
+        private System.Windows.Forms.Panel pnlDetallesDashboard;
+        private Guna.UI.WinForms.GunaDataGridView gDtgvDetallesRegion;
     }
 }

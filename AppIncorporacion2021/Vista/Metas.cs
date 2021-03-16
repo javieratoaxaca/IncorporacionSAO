@@ -141,5 +141,31 @@ namespace AppIncorporacion2021.Vista
         {
 
         }
+
+        private void gBtnDetallesRegion_Click(object sender, EventArgs e)
+        {
+            cnx = new ConexionBD();
+            try
+            {
+                //cnx.GetConnection(path);
+                string sql = "select region as 'REGION ID',nom_reg as 'NOMBRE REGION'," +
+                            "case when cr_cris = 'SE APLICO LA ENCUESTA' then count(folio_encuesta) else 0 end as 'SE APLICO LA ENCUESTA'," +
+                            " case when cr_cris = 'NADIE EN CASA' then count(folio_encuesta) else 0 end as 'NADIE EN CASA'," +
+                            " case when cr_cris = 'NO LOCALIZADAS' then count(folio_encuesta) else 0 end as 'NO LOCALIZADAS'," +
+                            " case when cr_cris = 'DEFUNCION DEL UNICO INTEGRANTE' then count(folio_encuesta) else 0 end as 'DEFUNCION DEL UNICO INTEGRANTE'," +
+                            " case when cr_cris = 'SE NEGO A DAR INFORMACION' then count(folio_encuesta) else 0 end as 'SE NEGO A DAR INFORMACION'," +
+                            " case when cr_cris = 'SIN LOTIFICAR' then count(folio_encuesta) else 0 end as 'SIN LOTIFICAR'" +
+                            "from nominainco group by region, nom_reg; ";
+                var data = cnx.GetDataTabla(sql);
+                gDtgvDetallesRegion.DataSource = data;
+                //gdtgvDetallesS3db.DataSource = data;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+    
     }
 }
