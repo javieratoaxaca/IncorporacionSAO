@@ -145,10 +145,11 @@ namespace AppIncorporacion2021.Vista
         private void gBtnDetallesRegion_Click(object sender, EventArgs e)
         {
             cnx = new ConexionBD();
+            //Seccion para los detalles de los Codigos de Resultado de la CRIS
             try
             {
                 //cnx.GetConnection(path);
-                string sql = "select region as 'REGION ID',nom_reg as 'NOMBRE REGION'," +
+                string sqlcris = "select region as 'REGION ID',nom_reg as 'NOMBRE REGION'," +
                             "case when cr_cris = 'SE APLICO LA ENCUESTA' then count(folio_encuesta) else 0 end as 'SE APLICO LA ENCUESTA'," +
                             " case when cr_cris = 'NADIE EN CASA' then count(folio_encuesta) else 0 end as 'NADIE EN CASA'," +
                             " case when cr_cris = 'NO LOCALIZADAS' then count(folio_encuesta) else 0 end as 'NO LOCALIZADAS'," +
@@ -156,7 +157,7 @@ namespace AppIncorporacion2021.Vista
                             " case when cr_cris = 'SE NEGO A DAR INFORMACION' then count(folio_encuesta) else 0 end as 'SE NEGO A DAR INFORMACION'," +
                             " case when cr_cris = 'SIN LOTIFICAR' then count(folio_encuesta) else 0 end as 'SIN LOTIFICAR'" +
                             "from nominainco group by region, nom_reg; ";
-                var data = cnx.GetDataTabla(sql);
+                var data = cnx.GetDataTabla(sqlcris);
                 gDtgvDetallesRegion.DataSource = data;
                 //gdtgvDetallesS3db.DataSource = data;
 
@@ -165,7 +166,34 @@ namespace AppIncorporacion2021.Vista
             {
                 MessageBox.Show(ex.Message);
             }
+            //Seccion para los detalles de los Codigos de Resultado de la Notificacion de Incorporacion
+            try
+            {
+                //cnx.GetConnection(path);
+                string sqlcris = "select region,nom_reg,"+
+  "case when cr_notificacion = 'ENTREGADO' then count(folio_encuesta) else 0 end as 'INCORPORACION ENTREGADA',"+
+    "case when cr_notificacion = 'NO ENTREGADO' then count(folio_encuesta) else 0 end as 'SIN INCORPORAR',"+
+    "case when cr_notificacion = 'NO ENTREGADO, DOCUMENTACIÓN SOPORTE INCOMPLETA' then count(folio_encuesta) else 0 end as 'SIN INCORPORAR, DOCUMENTACION INCOMPLETA',"+
+    "case when cr_notificacion = 'NO ENTREGADO, DUPLICIDAD DE FAMILIA Y/O INTEGRANTE' then count(folio_encuesta) else 0 end as 'SIN INCORPORAR, FAMILIA DUPLICADA',"+
+    "case when cr_notificacion = 'NO ENTREGADO, NEGATIVA PARA PARTICIPAR EN EL PROGRAMA O NO ACEPTÓ' then count(folio_encuesta) else 0 end as 'SIN INCORPORAR, NO ACEPTO PROGRAMA',"+
+    "case when cr_notificacion = 'NO ENTREGADO, NO LOCALIZADA' then count(folio_encuesta) else 0 end as 'SIN INCORPORAR,NO LOCALIZADA',"+
+    "case when cr_notificacion = 'SIN LOTIFICAR' then count(folio_encuesta) else 0 end as 'SIN LOTIFICAR'"+
+   "from nominainco group by region, nom_reg; ";
+                var data = cnx.GetDataTabla(sqlcris);
+                gDtgvDetallesNotificacion.DataSource = data;
+                //gdtgvDetallesS3db.DataSource = data;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            //SEccion para los detalles de los Codigos de resultado de los Avisos de Cobro
         }
-    
+
+        private void gDtgvDetallesRegion_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
