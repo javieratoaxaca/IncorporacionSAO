@@ -99,6 +99,27 @@ namespace AppIncorporacion2021.Vista
             catch (MySqlException ex) { MessageBox.Show(ex.Message); }
         }
         //Metodo para saber cuantas se les Entrego su Aviso de Cobro
+        //Metodo para cargar el cuadro gral de los detalles de la Db de Incorporacion  su CR
+        private void DataGridTutoras()
+        {
+            cnx = new ConexionBD();
+            this.pnldashboardmenu.Visible = false;
+            //pnlMetasDetalles.Visible = true;
+            //Seccion para los detalles de los Codigos de Resultado de la CRIS
+            try
+            {
+                //cnx.GetConnection(path);
+                string sqlcris = "select region as 'REGION ID',nom_reg as 'NOMBRE REGION',case when cr_cris = 'SE APLICO LA ENCUESTA' then count(folio_encuesta) else 0 end as 'SE APLICO LA ENCUESTA',case when cr_cris = 'NADIE EN CASA' then count(folio_encuesta) else 0 end as 'NADIE EN CASA',  case when cr_cris = 'NO LOCALIZADAS' then count(folio_encuesta) else 0 end as 'NO LOCALIZADAS',  case when cr_cris = 'DEFUNCION DEL UNICO INTEGRANTE' then count(folio_encuesta) else 0 end as 'DEFUNCION DEL UNICO INTEGRANTE',  case when cr_cris = 'SE NEGO A DAR INFORMACION' then count(folio_encuesta) else 0 end as 'SE NEGO A DAR INFORMACION', case when cr_cris = 'SIN LOTIFICAR' then count(folio_encuesta) else 0 end as 'SIN LOTIFICAR' from nominainco group by region, nom_reg; ";
+                var data = cnx.GetDataTabla(sqlcris);
+                gDtgvDetallesRegion.DataSource = data;
+                //gdtgvDetallesS3db.DataSource = data;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void tutorasBecasAviso()
         {
             // MySqlConnection cnxx = new MySqlConnection();
@@ -131,6 +152,7 @@ namespace AppIncorporacion2021.Vista
             tutorasBecasCris();
             tutorasBecasNoti();
             tutorasBecasAviso();
+            DataGridTutoras();
             
         }
 
@@ -146,29 +168,7 @@ namespace AppIncorporacion2021.Vista
 
         private void gBtnDetallesRegion_Click(object sender, EventArgs e)
         {
-            cnx = new ConexionBD();
-            this.pnldashboardmenu.Visible = false;
-            pnlMetasDetalles.Visible = true;
-            //Seccion para los detalles de los Codigos de Resultado de la CRIS
-            try
-            {
-                //cnx.GetConnection(path);
-                string sqlcris = "select region as 'REGION ID',nom_reg as 'NOMBRE REGION'," +
-                            "case when cr_cris = 'SE APLICO LA ENCUESTA' then count(folio_encuesta) else 0 end as 'SE APLICO LA ENCUESTA'," +
-                            "case when cr_cris = 'NADIE EN CASA' then count(folio_encuesta) else 0 end as 'NADIE EN CASA'," +
-                            "case when cr_cris = 'NO LOCALIZADAS' then count(folio_encuesta) else 0 end as 'NO LOCALIZADAS'," +
-                            "case when cr_cris = 'DEFUNCION DEL UNICO INTEGRANTE' then count(folio_encuesta) else 0 end as 'DEFUNCION DEL UNICO INTEGRANTE'," + 
-                           "case when cr_cris = 'SE NEGO A DAR INFORMACION' then count(folio_encuesta) else 0 end as 'SE NEGO A DAR INFORMACION'," +"case when cr_cris = 'SIN LOTIFICAR' then count(folio_encuesta) else 0 end as 'SIN LOTIFICAR'" +
-                            "from nominainco group by region, nom_reg; ";
-                var data = cnx.GetDataTabla(sqlcris);
-                gDtgvDetallesRegion.DataSource = data;
-                //gdtgvDetallesS3db.DataSource = data;
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+           
             //Seccion para los detalles de los Codigos de Resultado de la Notificacion de Incorporacion
             try
             {
@@ -202,7 +202,7 @@ namespace AppIncorporacion2021.Vista
 
         private void gBtnCerrarMetas_Click(object sender, EventArgs e)
         {
-            this.pnldashboardmenu.Visible = true;
+            //this.pnldashboardmenu.Visible = true;
             this.Close();
             
         }

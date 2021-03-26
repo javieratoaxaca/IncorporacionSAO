@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.glblMetas = new Guna.UI.WinForms.GunaLabel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -60,10 +60,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pnlMetasDetalles = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.gBtnCerrarMetas = new Guna.UI.WinForms.GunaButton();
-            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.gDtgvDetallesRegion = new Guna.UI.WinForms.GunaDataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
+            this.gBtnCerrarMetas = new Guna.UI.WinForms.GunaButton();
             this.panel1.SuspendLayout();
             this.gGpoSuperior.SuspendLayout();
             this.gGpoEms.SuspendLayout();
@@ -73,8 +73,8 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.pnlMetasDetalles.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gDtgvDetallesRegion)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -99,7 +99,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(924, 39);
+            this.panel1.Size = new System.Drawing.Size(955, 39);
             this.panel1.TabIndex = 17;
             // 
             // gGpoSuperior
@@ -301,44 +301,44 @@
             // 
             this.glblAvisosCobro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.glblAvisosCobro.AutoSize = true;
-            this.glblAvisosCobro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.glblAvisosCobro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.glblAvisosCobro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
-            this.glblAvisosCobro.Location = new System.Drawing.Point(224, 149);
+            this.glblAvisosCobro.Location = new System.Drawing.Point(215, 149);
             this.glblAvisosCobro.Name = "glblAvisosCobro";
-            this.glblAvisosCobro.Size = new System.Drawing.Size(16, 24);
+            this.glblAvisosCobro.Size = new System.Drawing.Size(13, 18);
             this.glblAvisosCobro.TabIndex = 20;
             this.glblAvisosCobro.Text = " ";
             // 
             // glblIncorporacion
             // 
             this.glblIncorporacion.AutoSize = true;
-            this.glblIncorporacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.glblIncorporacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.glblIncorporacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
-            this.glblIncorporacion.Location = new System.Drawing.Point(224, 113);
+            this.glblIncorporacion.Location = new System.Drawing.Point(215, 113);
             this.glblIncorporacion.Name = "glblIncorporacion";
-            this.glblIncorporacion.Size = new System.Drawing.Size(16, 24);
+            this.glblIncorporacion.Size = new System.Drawing.Size(13, 18);
             this.glblIncorporacion.TabIndex = 19;
             this.glblIncorporacion.Text = " ";
             // 
             // glblEncuestas
             // 
             this.glblEncuestas.AutoSize = true;
-            this.glblEncuestas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.glblEncuestas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.glblEncuestas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
-            this.glblEncuestas.Location = new System.Drawing.Point(224, 79);
+            this.glblEncuestas.Location = new System.Drawing.Point(215, 79);
             this.glblEncuestas.Name = "glblEncuestas";
-            this.glblEncuestas.Size = new System.Drawing.Size(16, 24);
+            this.glblEncuestas.Size = new System.Drawing.Size(13, 18);
             this.glblEncuestas.TabIndex = 18;
             this.glblEncuestas.Text = " ";
             // 
             // glblTutoras
             // 
             this.glblTutoras.AutoSize = true;
-            this.glblTutoras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.glblTutoras.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.glblTutoras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
-            this.glblTutoras.Location = new System.Drawing.Point(224, 36);
+            this.glblTutoras.Location = new System.Drawing.Point(215, 36);
             this.glblTutoras.Name = "glblTutoras";
-            this.glblTutoras.Size = new System.Drawing.Size(16, 24);
+            this.glblTutoras.Size = new System.Drawing.Size(13, 18);
             this.glblTutoras.TabIndex = 17;
             this.glblTutoras.Text = " ";
             // 
@@ -395,7 +395,7 @@
             this.pnldashboardmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnldashboardmenu.Location = new System.Drawing.Point(0, 39);
             this.pnldashboardmenu.Name = "pnldashboardmenu";
-            this.pnldashboardmenu.Size = new System.Drawing.Size(924, 249);
+            this.pnldashboardmenu.Size = new System.Drawing.Size(955, 249);
             this.pnldashboardmenu.TabIndex = 18;
             // 
             // panel5
@@ -435,94 +435,47 @@
             this.pnlMetasDetalles.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMetasDetalles.Location = new System.Drawing.Point(0, 288);
             this.pnlMetasDetalles.Name = "pnlMetasDetalles";
-            this.pnlMetasDetalles.Size = new System.Drawing.Size(924, 337);
+            this.pnlMetasDetalles.Size = new System.Drawing.Size(955, 422);
             this.pnlMetasDetalles.TabIndex = 20;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.gunaLabel7);
-            this.panel2.Controls.Add(this.gBtnCerrarMetas);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(924, 40);
-            this.panel2.TabIndex = 0;
-            // 
-            // gBtnCerrarMetas
-            // 
-            this.gBtnCerrarMetas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.gBtnCerrarMetas.AnimationHoverSpeed = 0.07F;
-            this.gBtnCerrarMetas.AnimationSpeed = 0.03F;
-            this.gBtnCerrarMetas.BackColor = System.Drawing.Color.Transparent;
-            this.gBtnCerrarMetas.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
-            this.gBtnCerrarMetas.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
-            this.gBtnCerrarMetas.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gBtnCerrarMetas.FocusedColor = System.Drawing.Color.Empty;
-            this.gBtnCerrarMetas.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gBtnCerrarMetas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gBtnCerrarMetas.Image = global::AppIncorporacion2021.Properties.Resources.icons8_cancel_64px;
-            this.gBtnCerrarMetas.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gBtnCerrarMetas.ImageSize = new System.Drawing.Size(30, 30);
-            this.gBtnCerrarMetas.Location = new System.Drawing.Point(868, 6);
-            this.gBtnCerrarMetas.Name = "gBtnCerrarMetas";
-            this.gBtnCerrarMetas.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.gBtnCerrarMetas.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            this.gBtnCerrarMetas.OnHoverForeColor = System.Drawing.Color.White;
-            this.gBtnCerrarMetas.OnHoverImage = null;
-            this.gBtnCerrarMetas.OnPressedColor = System.Drawing.Color.Black;
-            this.gBtnCerrarMetas.Radius = 20;
-            this.gBtnCerrarMetas.Size = new System.Drawing.Size(37, 32);
-            this.gBtnCerrarMetas.TabIndex = 14;
-            this.gBtnCerrarMetas.Click += new System.EventHandler(this.gBtnCerrarMetas_Click);
-            // 
-            // gunaLabel7
-            // 
-            this.gunaLabel7.AutoSize = true;
-            this.gunaLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
-            this.gunaLabel7.Location = new System.Drawing.Point(7, 6);
-            this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(209, 25);
-            this.gunaLabel7.TabIndex = 15;
-            this.gunaLabel7.Text = "Detalles de Metas:";
             // 
             // gDtgvDetallesRegion
             // 
             this.gDtgvDetallesRegion.AllowUserToAddRows = false;
             this.gDtgvDetallesRegion.AllowUserToDeleteRows = false;
             this.gDtgvDetallesRegion.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.gDtgvDetallesRegion.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gDtgvDetallesRegion.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gDtgvDetallesRegion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gDtgvDetallesRegion.BackgroundColor = System.Drawing.Color.Black;
             this.gDtgvDetallesRegion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gDtgvDetallesRegion.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.gDtgvDetallesRegion.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gDtgvDetallesRegion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gDtgvDetallesRegion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gDtgvDetallesRegion.ColumnHeadersHeight = 45;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Semi Rounded Sans Serif 7", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gDtgvDetallesRegion.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Semi Rounded Sans Serif 7", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gDtgvDetallesRegion.DefaultCellStyle = dataGridViewCellStyle3;
+            this.gDtgvDetallesRegion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gDtgvDetallesRegion.EnableHeadersVisualStyles = false;
             this.gDtgvDetallesRegion.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gDtgvDetallesRegion.Location = new System.Drawing.Point(8, 44);
+            this.gDtgvDetallesRegion.Location = new System.Drawing.Point(0, 40);
             this.gDtgvDetallesRegion.Name = "gDtgvDetallesRegion";
             this.gDtgvDetallesRegion.ReadOnly = true;
             this.gDtgvDetallesRegion.RowHeadersVisible = false;
             this.gDtgvDetallesRegion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gDtgvDetallesRegion.Size = new System.Drawing.Size(904, 290);
+            this.gDtgvDetallesRegion.Size = new System.Drawing.Size(955, 382);
             this.gDtgvDetallesRegion.TabIndex = 1;
             this.gDtgvDetallesRegion.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gDtgvDetallesRegion.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -547,11 +500,59 @@
             this.gDtgvDetallesRegion.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
             this.gDtgvDetallesRegion.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.gunaLabel7);
+            this.panel2.Controls.Add(this.gBtnCerrarMetas);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(955, 40);
+            this.panel2.TabIndex = 0;
+            // 
+            // gunaLabel7
+            // 
+            this.gunaLabel7.AutoSize = true;
+            this.gunaLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(87)))), ((int)(((byte)(86)))));
+            this.gunaLabel7.Location = new System.Drawing.Point(7, 6);
+            this.gunaLabel7.Name = "gunaLabel7";
+            this.gunaLabel7.Size = new System.Drawing.Size(209, 25);
+            this.gunaLabel7.TabIndex = 15;
+            this.gunaLabel7.Text = "Detalles de Metas:";
+            // 
+            // gBtnCerrarMetas
+            // 
+            this.gBtnCerrarMetas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gBtnCerrarMetas.AnimationHoverSpeed = 0.07F;
+            this.gBtnCerrarMetas.AnimationSpeed = 0.03F;
+            this.gBtnCerrarMetas.BackColor = System.Drawing.Color.Transparent;
+            this.gBtnCerrarMetas.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
+            this.gBtnCerrarMetas.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
+            this.gBtnCerrarMetas.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gBtnCerrarMetas.FocusedColor = System.Drawing.Color.Empty;
+            this.gBtnCerrarMetas.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gBtnCerrarMetas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gBtnCerrarMetas.Image = global::AppIncorporacion2021.Properties.Resources.icons8_cancel_64px;
+            this.gBtnCerrarMetas.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gBtnCerrarMetas.ImageSize = new System.Drawing.Size(30, 30);
+            this.gBtnCerrarMetas.Location = new System.Drawing.Point(899, 6);
+            this.gBtnCerrarMetas.Name = "gBtnCerrarMetas";
+            this.gBtnCerrarMetas.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.gBtnCerrarMetas.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
+            this.gBtnCerrarMetas.OnHoverForeColor = System.Drawing.Color.White;
+            this.gBtnCerrarMetas.OnHoverImage = null;
+            this.gBtnCerrarMetas.OnPressedColor = System.Drawing.Color.Black;
+            this.gBtnCerrarMetas.Radius = 20;
+            this.gBtnCerrarMetas.Size = new System.Drawing.Size(37, 32);
+            this.gBtnCerrarMetas.TabIndex = 14;
+            this.gBtnCerrarMetas.Click += new System.EventHandler(this.gBtnCerrarMetas_Click);
+            // 
             // Metas
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
-            this.ClientSize = new System.Drawing.Size(924, 674);
+            this.ClientSize = new System.Drawing.Size(955, 722);
             this.Controls.Add(this.pnlMetasDetalles);
             this.Controls.Add(this.pnldashboardmenu);
             this.Controls.Add(this.panel1);
@@ -572,9 +573,9 @@
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.pnlMetasDetalles.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gDtgvDetallesRegion)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gDtgvDetallesRegion)).EndInit();
             this.ResumeLayout(false);
 
         }
