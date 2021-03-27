@@ -99,7 +99,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(955, 39);
+            this.panel1.Size = new System.Drawing.Size(927, 39);
             this.panel1.TabIndex = 17;
             // 
             // gGpoSuperior
@@ -395,7 +395,7 @@
             this.pnldashboardmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnldashboardmenu.Location = new System.Drawing.Point(0, 39);
             this.pnldashboardmenu.Name = "pnldashboardmenu";
-            this.pnldashboardmenu.Size = new System.Drawing.Size(955, 249);
+            this.pnldashboardmenu.Size = new System.Drawing.Size(927, 249);
             this.pnldashboardmenu.TabIndex = 18;
             // 
             // panel5
@@ -435,7 +435,7 @@
             this.pnlMetasDetalles.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMetasDetalles.Location = new System.Drawing.Point(0, 288);
             this.pnlMetasDetalles.Name = "pnlMetasDetalles";
-            this.pnlMetasDetalles.Size = new System.Drawing.Size(955, 422);
+            this.pnlMetasDetalles.Size = new System.Drawing.Size(927, 422);
             this.pnlMetasDetalles.TabIndex = 20;
             // 
             // gDtgvDetallesRegion
@@ -475,7 +475,7 @@
             this.gDtgvDetallesRegion.ReadOnly = true;
             this.gDtgvDetallesRegion.RowHeadersVisible = false;
             this.gDtgvDetallesRegion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gDtgvDetallesRegion.Size = new System.Drawing.Size(955, 382);
+            this.gDtgvDetallesRegion.Size = new System.Drawing.Size(927, 382);
             this.gDtgvDetallesRegion.TabIndex = 1;
             this.gDtgvDetallesRegion.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gDtgvDetallesRegion.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -507,7 +507,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(955, 40);
+            this.panel2.Size = new System.Drawing.Size(927, 40);
             this.panel2.TabIndex = 0;
             // 
             // gunaLabel7
@@ -536,7 +536,7 @@
             this.gBtnCerrarMetas.Image = global::AppIncorporacion2021.Properties.Resources.icons8_cancel_64px;
             this.gBtnCerrarMetas.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gBtnCerrarMetas.ImageSize = new System.Drawing.Size(30, 30);
-            this.gBtnCerrarMetas.Location = new System.Drawing.Point(899, 6);
+            this.gBtnCerrarMetas.Location = new System.Drawing.Point(871, 6);
             this.gBtnCerrarMetas.Name = "gBtnCerrarMetas";
             this.gBtnCerrarMetas.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.gBtnCerrarMetas.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(2)))), ((int)(((byte)(32)))));
@@ -552,7 +552,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
-            this.ClientSize = new System.Drawing.Size(955, 722);
+            this.ClientSize = new System.Drawing.Size(927, 722);
             this.Controls.Add(this.pnlMetasDetalles);
             this.Controls.Add(this.pnldashboardmenu);
             this.Controls.Add(this.panel1);

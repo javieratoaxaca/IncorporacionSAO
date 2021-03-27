@@ -56,15 +56,12 @@
             this.gBtnSubMenuBasica = new Guna.UI.WinForms.GunaButton();
             this.gBtnUniversos = new Guna.UI.WinForms.GunaButton();
             this.pnlLogo = new System.Windows.Forms.Panel();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.pnlEncabezado.SuspendLayout();
             this.pnlCentral.SuspendLayout();
             this.pnlMenuLateral.SuspendLayout();
             this.pnlSubMenuAdmin.SuspendLayout();
             this.pnlSubMenuMetas.SuspendLayout();
             this.pnlSubmenuUniversos.SuspendLayout();
-            this.pnlLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -579,23 +576,11 @@
             // 
             // pnlLogo
             // 
-            this.pnlLogo.Controls.Add(this.gunaPictureBox1);
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLogo.Location = new System.Drawing.Point(0, 0);
             this.pnlLogo.Name = "pnlLogo";
             this.pnlLogo.Size = new System.Drawing.Size(240, 100);
             this.pnlLogo.TabIndex = 0;
-            // 
-            // gunaPictureBox1
-            // 
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPictureBox1.Image = global::AppIncorporacion2021.Properties.Resources.FirmaATBack;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(240, 100);
-            this.gunaPictureBox1.TabIndex = 0;
-            this.gunaPictureBox1.TabStop = false;
             // 
             // Dashboard
             // 
@@ -615,8 +600,6 @@
             this.pnlSubMenuAdmin.ResumeLayout(false);
             this.pnlSubMenuMetas.ResumeLayout(false);
             this.pnlSubmenuUniversos.ResumeLayout(false);
-            this.pnlLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -630,7 +613,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private System.Windows.Forms.Panel pnlMenuLateral;
         private System.Windows.Forms.Panel pnlLogo;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         private Guna.UI.WinForms.GunaButton gBtnDataGrid;
         private System.Windows.Forms.Panel pnlSubmenuUniversos;
         private Guna.UI.WinForms.GunaButton gBtnSubMenuJef;
