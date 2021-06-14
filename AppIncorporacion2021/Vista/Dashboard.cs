@@ -135,6 +135,7 @@ namespace AppIncorporacion2021.Vista
 
         private void gBtnSubMenuAdminEms_Click(object sender, EventArgs e)
         {
+            abrirFormularioHijo(new OrdenPago());
             /*
                   Aqui va el codigo para las demas operaciones
                   */

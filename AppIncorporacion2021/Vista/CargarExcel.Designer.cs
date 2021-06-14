@@ -86,6 +86,7 @@
             this.gBtnExaminarExcel.Size = new System.Drawing.Size(159, 46);
             this.gBtnExaminarExcel.TabIndex = 16;
             this.gBtnExaminarExcel.Text = "Examinar";
+            this.gBtnExaminarExcel.Click += new System.EventHandler(this.gBtnExaminarExcel_Click);
             // 
             // gtxtDirExcel
             // 

@@ -78,20 +78,9 @@ namespace AppIncorporacion2021
                     dtBecarios.Bimestre = Convert.ToInt32(gdtgvDetallesS3db.Rows[i].Cells[17].Value.ToString());
                     dtBecarios.Remesa = gdtgvDetallesS3db.Rows[i].Cells[18].Value.ToString();
                     dtBecarios.Anio = gdtgvDetallesS3db.Rows[i].Cells[19].Value.ToString();
-
                     smBecarios.SetBecarios(dtBecarios);
-                    //if (!smBecarios.ExisteBecario(dtBecarios.Id_programa))
-                    //{
-                    //    if (smBecarios.SetBecarios(dtBecarios))
-                    //    {
-                    //       // MessageBox.Show("Se Guardo Exitosamente");
-                    //    }
-                    //}
-                    
-                }
-                
-            }
-            
+                }                
+            }            
             catch (Exception ex)
             {
 

@@ -16,5 +16,10 @@ namespace AppIncorporacion2021.Vista
         {
             InitializeComponent();
         }
+
+        private void gBtnExaminarExcel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

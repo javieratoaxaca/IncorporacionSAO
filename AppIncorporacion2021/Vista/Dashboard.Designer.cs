@@ -32,30 +32,30 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.pnlEncabezado = new System.Windows.Forms.Panel();
-            this.btnMin = new Guna.UI.WinForms.GunaButton();
-            this.btnMax = new Guna.UI.WinForms.GunaButton();
-            this.btnClose = new Guna.UI.WinForms.GunaButton();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.pnlPiePagina = new System.Windows.Forms.Panel();
             this.pnlCentral = new System.Windows.Forms.Panel();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.pnlMenuLateral = new System.Windows.Forms.Panel();
             this.pnlSubMenuAdmin = new System.Windows.Forms.Panel();
+            this.pnlSubMenuMetas = new System.Windows.Forms.Panel();
+            this.pnlSubmenuUniversos = new System.Windows.Forms.Panel();
+            this.pnlLogo = new System.Windows.Forms.Panel();
             this.gBtnSubMenuAdminJef = new Guna.UI.WinForms.GunaButton();
             this.gBtnSubMenuAdminEms = new Guna.UI.WinForms.GunaButton();
             this.gBtnSubMenuAdminBasica = new Guna.UI.WinForms.GunaButton();
             this.gBtnAdmin = new Guna.UI.WinForms.GunaButton();
-            this.pnlSubMenuMetas = new System.Windows.Forms.Panel();
             this.gbtnSubMenuMetaJef = new Guna.UI.WinForms.GunaButton();
             this.gbtnSubMenuMetaEms = new Guna.UI.WinForms.GunaButton();
             this.gbtnSubMenuMetaBasica = new Guna.UI.WinForms.GunaButton();
             this.gBtnDataGrid = new Guna.UI.WinForms.GunaButton();
-            this.pnlSubmenuUniversos = new System.Windows.Forms.Panel();
             this.gBtnSubMenuJef = new Guna.UI.WinForms.GunaButton();
             this.gBtnSubMenuEms = new Guna.UI.WinForms.GunaButton();
             this.gBtnSubMenuBasica = new Guna.UI.WinForms.GunaButton();
             this.gBtnUniversos = new Guna.UI.WinForms.GunaButton();
-            this.pnlLogo = new System.Windows.Forms.Panel();
+            this.btnMin = new Guna.UI.WinForms.GunaButton();
+            this.btnMax = new Guna.UI.WinForms.GunaButton();
+            this.btnClose = new Guna.UI.WinForms.GunaButton();
             this.pnlEncabezado.SuspendLayout();
             this.pnlCentral.SuspendLayout();
             this.pnlMenuLateral.SuspendLayout();
@@ -84,82 +84,6 @@
             this.pnlEncabezado.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlEncabezado_MouseDown);
             this.pnlEncabezado.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlEncabezado_MouseMove);
             this.pnlEncabezado.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlEncabezado_MouseUp);
-            // 
-            // btnMin
-            // 
-            this.btnMin.AnimationHoverSpeed = 0.07F;
-            this.btnMin.AnimationSpeed = 0.03F;
-            this.btnMin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
-            this.btnMin.BorderColor = System.Drawing.Color.Black;
-            this.btnMin.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnMin.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnMin.FocusedColor = System.Drawing.Color.Empty;
-            this.btnMin.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnMin.ForeColor = System.Drawing.Color.White;
-            this.btnMin.Image = global::AppIncorporacion2021.Properties.Resources.min_64px;
-            this.btnMin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnMin.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnMin.Location = new System.Drawing.Point(883, 0);
-            this.btnMin.Name = "btnMin";
-            this.btnMin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnMin.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnMin.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnMin.OnHoverImage = null;
-            this.btnMin.OnPressedColor = System.Drawing.Color.Black;
-            this.btnMin.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.btnMin.Size = new System.Drawing.Size(50, 42);
-            this.btnMin.TabIndex = 7;
-            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
-            // 
-            // btnMax
-            // 
-            this.btnMax.AnimationHoverSpeed = 0.07F;
-            this.btnMax.AnimationSpeed = 0.03F;
-            this.btnMax.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(188)))), ((int)(((byte)(154)))));
-            this.btnMax.BorderColor = System.Drawing.Color.Black;
-            this.btnMax.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnMax.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnMax.FocusedColor = System.Drawing.Color.Empty;
-            this.btnMax.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnMax.ForeColor = System.Drawing.Color.White;
-            this.btnMax.Image = global::AppIncorporacion2021.Properties.Resources.max_64px;
-            this.btnMax.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnMax.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnMax.Location = new System.Drawing.Point(933, 0);
-            this.btnMax.Name = "btnMax";
-            this.btnMax.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnMax.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnMax.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnMax.OnHoverImage = null;
-            this.btnMax.OnPressedColor = System.Drawing.Color.Black;
-            this.btnMax.Size = new System.Drawing.Size(50, 42);
-            this.btnMax.TabIndex = 8;
-            this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.AnimationHoverSpeed = 0.07F;
-            this.btnClose.AnimationSpeed = 0.03F;
-            this.btnClose.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
-            this.btnClose.BorderColor = System.Drawing.Color.Black;
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnClose.FocusedColor = System.Drawing.Color.Empty;
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Image = global::AppIncorporacion2021.Properties.Resources.icons8_cancel_64px;
-            this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnClose.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnClose.Location = new System.Drawing.Point(983, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnClose.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnClose.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnClose.OnHoverImage = null;
-            this.btnClose.OnPressedColor = System.Drawing.Color.Black;
-            this.btnClose.Size = new System.Drawing.Size(50, 42);
-            this.btnClose.TabIndex = 6;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // gunaLabel1
             // 
@@ -228,6 +152,38 @@
             this.pnlSubMenuAdmin.Name = "pnlSubMenuAdmin";
             this.pnlSubMenuAdmin.Size = new System.Drawing.Size(240, 130);
             this.pnlSubMenuAdmin.TabIndex = 7;
+            // 
+            // pnlSubMenuMetas
+            // 
+            this.pnlSubMenuMetas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
+            this.pnlSubMenuMetas.Controls.Add(this.gbtnSubMenuMetaJef);
+            this.pnlSubMenuMetas.Controls.Add(this.gbtnSubMenuMetaEms);
+            this.pnlSubMenuMetas.Controls.Add(this.gbtnSubMenuMetaBasica);
+            this.pnlSubMenuMetas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSubMenuMetas.Location = new System.Drawing.Point(0, 314);
+            this.pnlSubMenuMetas.Name = "pnlSubMenuMetas";
+            this.pnlSubMenuMetas.Size = new System.Drawing.Size(240, 130);
+            this.pnlSubMenuMetas.TabIndex = 5;
+            // 
+            // pnlSubmenuUniversos
+            // 
+            this.pnlSubmenuUniversos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
+            this.pnlSubmenuUniversos.Controls.Add(this.gBtnSubMenuJef);
+            this.pnlSubmenuUniversos.Controls.Add(this.gBtnSubMenuEms);
+            this.pnlSubmenuUniversos.Controls.Add(this.gBtnSubMenuBasica);
+            this.pnlSubmenuUniversos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSubmenuUniversos.Location = new System.Drawing.Point(0, 142);
+            this.pnlSubmenuUniversos.Name = "pnlSubmenuUniversos";
+            this.pnlSubmenuUniversos.Size = new System.Drawing.Size(240, 130);
+            this.pnlSubmenuUniversos.TabIndex = 3;
+            // 
+            // pnlLogo
+            // 
+            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogo.Name = "pnlLogo";
+            this.pnlLogo.Size = new System.Drawing.Size(240, 100);
+            this.pnlLogo.TabIndex = 0;
             // 
             // gBtnSubMenuAdminJef
             // 
@@ -332,21 +288,9 @@
             this.gBtnAdmin.OnPressedColor = System.Drawing.Color.Black;
             this.gBtnAdmin.Size = new System.Drawing.Size(240, 42);
             this.gBtnAdmin.TabIndex = 6;
-            this.gBtnAdmin.Text = "Administrador";
+            this.gBtnAdmin.Text = "Herramientas";
             this.gBtnAdmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gBtnAdmin.Click += new System.EventHandler(this.gBtnAdmin_Click);
-            // 
-            // pnlSubMenuMetas
-            // 
-            this.pnlSubMenuMetas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
-            this.pnlSubMenuMetas.Controls.Add(this.gbtnSubMenuMetaJef);
-            this.pnlSubMenuMetas.Controls.Add(this.gbtnSubMenuMetaEms);
-            this.pnlSubMenuMetas.Controls.Add(this.gbtnSubMenuMetaBasica);
-            this.pnlSubMenuMetas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubMenuMetas.Location = new System.Drawing.Point(0, 314);
-            this.pnlSubMenuMetas.Name = "pnlSubMenuMetas";
-            this.pnlSubMenuMetas.Size = new System.Drawing.Size(240, 130);
-            this.pnlSubMenuMetas.TabIndex = 5;
             // 
             // gbtnSubMenuMetaJef
             // 
@@ -455,18 +399,6 @@
             this.gBtnDataGrid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gBtnDataGrid.Click += new System.EventHandler(this.gBtnDataGrid_Click);
             // 
-            // pnlSubmenuUniversos
-            // 
-            this.pnlSubmenuUniversos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
-            this.pnlSubmenuUniversos.Controls.Add(this.gBtnSubMenuJef);
-            this.pnlSubmenuUniversos.Controls.Add(this.gBtnSubMenuEms);
-            this.pnlSubmenuUniversos.Controls.Add(this.gBtnSubMenuBasica);
-            this.pnlSubmenuUniversos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubmenuUniversos.Location = new System.Drawing.Point(0, 142);
-            this.pnlSubmenuUniversos.Name = "pnlSubmenuUniversos";
-            this.pnlSubmenuUniversos.Size = new System.Drawing.Size(240, 130);
-            this.pnlSubmenuUniversos.TabIndex = 3;
-            // 
             // gBtnSubMenuJef
             // 
             this.gBtnSubMenuJef.AnimationHoverSpeed = 0.07F;
@@ -574,13 +506,81 @@
             this.gBtnUniversos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gBtnUniversos.Click += new System.EventHandler(this.gBtnUniversos_Click);
             // 
-            // pnlLogo
+            // btnMin
             // 
-            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(240, 100);
-            this.pnlLogo.TabIndex = 0;
+            this.btnMin.AnimationHoverSpeed = 0.07F;
+            this.btnMin.AnimationSpeed = 0.03F;
+            this.btnMin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
+            this.btnMin.BorderColor = System.Drawing.Color.Black;
+            this.btnMin.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnMin.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMin.FocusedColor = System.Drawing.Color.Empty;
+            this.btnMin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMin.ForeColor = System.Drawing.Color.White;
+            this.btnMin.Image = global::AppIncorporacion2021.Properties.Resources.min_64px;
+            this.btnMin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnMin.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnMin.Location = new System.Drawing.Point(883, 0);
+            this.btnMin.Name = "btnMin";
+            this.btnMin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnMin.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnMin.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnMin.OnHoverImage = null;
+            this.btnMin.OnPressedColor = System.Drawing.Color.Black;
+            this.btnMin.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
+            this.btnMin.Size = new System.Drawing.Size(50, 42);
+            this.btnMin.TabIndex = 7;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
+            // 
+            // btnMax
+            // 
+            this.btnMax.AnimationHoverSpeed = 0.07F;
+            this.btnMax.AnimationSpeed = 0.03F;
+            this.btnMax.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(188)))), ((int)(((byte)(154)))));
+            this.btnMax.BorderColor = System.Drawing.Color.Black;
+            this.btnMax.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnMax.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMax.FocusedColor = System.Drawing.Color.Empty;
+            this.btnMax.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMax.ForeColor = System.Drawing.Color.White;
+            this.btnMax.Image = global::AppIncorporacion2021.Properties.Resources.max_64px;
+            this.btnMax.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnMax.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnMax.Location = new System.Drawing.Point(933, 0);
+            this.btnMax.Name = "btnMax";
+            this.btnMax.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnMax.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnMax.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnMax.OnHoverImage = null;
+            this.btnMax.OnPressedColor = System.Drawing.Color.Black;
+            this.btnMax.Size = new System.Drawing.Size(50, 42);
+            this.btnMax.TabIndex = 8;
+            this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.AnimationHoverSpeed = 0.07F;
+            this.btnClose.AnimationSpeed = 0.03F;
+            this.btnClose.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(143)))), ((int)(((byte)(84)))));
+            this.btnClose.BorderColor = System.Drawing.Color.Black;
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnClose.FocusedColor = System.Drawing.Color.Empty;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Image = global::AppIncorporacion2021.Properties.Resources.icons8_cancel_64px;
+            this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnClose.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnClose.Location = new System.Drawing.Point(983, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnClose.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnClose.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnClose.OnHoverImage = null;
+            this.btnClose.OnPressedColor = System.Drawing.Color.Black;
+            this.btnClose.Size = new System.Drawing.Size(50, 42);
+            this.btnClose.TabIndex = 6;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // Dashboard
             // 

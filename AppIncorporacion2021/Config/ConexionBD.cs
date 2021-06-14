@@ -12,9 +12,6 @@ namespace AppIncorporacion2021.Config
 
         public ConexionBD()
         {
-            //Conexion de Casa
-            //cad_cnx = "Database=tiendita; Data Source=localhost;User id=root;password=oportunidades;";
-            //Conexion de Trabajo
             cad_cnx = "Database=Incorporacion2021; Data Source=localhost;User id=root;password=oportunidades;";
         }
         public MySqlConnection GetConnection()
@@ -32,7 +29,7 @@ namespace AppIncorporacion2021.Config
             {
                 throw new Exception("Error: Al realizar la conexion la Base de datos." + ex.Message);
             }
-
+            
             return mysqlcnn;
         }
         public int ExecuteQuery(string SQL)

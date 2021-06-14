@@ -47,6 +47,6 @@ C:\Users\Oscar Larios\Documents\Visual Studio 2015\Projects\IncorporacionSAO\App
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\bin\Debug\SpreadsheetLight.dll
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\bin\Debug\DocumentFormat.OpenXml.dll
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\bin\Debug\SpreadsheetLight.xml
-D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\bin\Debug\DocumentFormat.OpenXml.xml
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.Vista.CargarExcel.resources
 D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.Vista.DetallesIncorporacion.resources
+D:\AT_OAXACA\Documents\Visual Studio 2015\Projects\AppIncorporacion2021\AppIncorporacion2021\obj\Debug\AppIncorporacion2021.Vista.OrdenPago.resources
