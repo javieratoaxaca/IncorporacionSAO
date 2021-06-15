@@ -39,6 +39,7 @@ namespace AppIncorporacion2021.Config
             {
                
                 MySqlCommand MySqlCommand = new MySqlCommand(SQL, GetConnection());
+
                 result = MySqlCommand.ExecuteNonQuery();
             }
             catch (MySqlException ex)
